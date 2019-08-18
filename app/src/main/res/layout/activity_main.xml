@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="MY CALCULADORA"
+        android:textColor="#365FF4"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valor1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="#D1F436"
+        android:hint="Escribe  valor 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/valor2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EEF436"
+        android:hint="Escribe valor  2"
+        android:inputType="number" />
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSuma"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:background="#F4364C"
+            android:onClick="onClick"
+            android:text="Sum"
+            android:textColor="#0033CC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnResta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/btnSuma"
+            android:layout_toRightOf="@+id/btnSuma"
+            android:background="#F43652"
+            android:onClick="onClick"
+            android:text="Rest"
+            android:textColor="#0022CC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnMultipli"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-236dp"
+            android:layout_marginLeft="-236dp"
+            android:layout_marginTop="138dp"
+            android:layout_toEndOf="@+id/btnResta"
+            android:layout_toRightOf="@+id/btnResta"
+            android:background="#9C27B0"
+            android:onClick="onClick"
+            android:text="multi"
+            android:textColor="#001BCC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-88dp"
+            android:layout_marginLeft="-88dp"
+            android:layout_marginTop="71dp"
+            android:layout_toEndOf="@+id/btnMultipli"
+            android:layout_toRightOf="@+id/btnMultipli"
+            android:background="#00BCD4"
+            android:onClick="onClick"
+            android:text="Divide"
+            android:textColor="#0044CC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRaiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="64dp"
+            android:layout_toEndOf="@+id/btnDiv"
+            android:layout_toRightOf="@+id/btnDiv"
+            android:background="#00BCD4"
+            android:onClick="onClick"
+            android:text="Raiz"
+            android:textColor="#003ACC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnFactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-90dp"
+            android:layout_marginLeft="-90dp"
+            android:layout_marginTop="133dp"
+            android:layout_toEndOf="@+id/btnRaiz"
+            android:layout_toRightOf="@+id/btnRaiz"
+            android:background="#9C27B0"
+            android:onClick="onClick"
+            android:text="Factor"
+            android:textColor="#003ACC"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/etiResultado"
+        android:layout_width="382dp"
+        android:layout_height="472dp"
+        android:layout_alignParentStart="true"
+        android:text="Result"
+        android:textColor="#000796"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
